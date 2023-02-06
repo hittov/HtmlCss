@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <link
+      rel="shortcut icon"
+      href="https://assets.nflxext.com/ffe/siteui/common/icons/nficon2016.ico"
+    />
+    <title>The Park Times</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is my website" />
+    <style>
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+      span {
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      /* states 1. active : 대상을 클릭하고 있을 때 2. hover : 마우스가 대상 위에 있을 때 
+                3. focus : acive와 비슷하지만 키보드로 선택되었을 때 
+                4. visited : 링크에만 적용 링크 방문 시 스타일 적용
+                5. focus-within : focuse된 자식의 부모 요소 상태 
+                ex) 자식 input이 focus되면 부모 form의 요소 변경 
+                state은 요소 끼리 연계해서 사용 가능 form:hover input:focus 
+                input이 focused된 상태와 form의 hover 된 경우 적용*/
+      /* pseudo states는 :: 사용 input::placeholder*/
+      p::first-letter {
+        color: white;
+        font-size: 50px;
+        background-color: yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <p>hello</p>
+    </form>
+  </body>
+</html>

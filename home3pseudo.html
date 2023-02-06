@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <link
+      rel="shortcut icon"
+      href="https://assets.nflxext.com/ffe/siteui/common/icons/nficon2016.ico"
+    />
+    <title>The Park Times</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is my website" />
+    <style>
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+      /* position: static; 레이아웃이 박스를 처음 위치하는 곳에 두는 것(디폴트)
+         relative 처음 위치한 곳을 기준으로 상하좌우 미세하게 수정 할 떄
+         absolute 가장 가까운 relative 부모를 기준 없으면 body 기준 
+         top: 0; 면 가장 위*/
+
+      /* pseudo selector 좀더 세부적으로 요소를 선택 div:first-child{} class나 id보다 좋은 방법
+         nth-child(even) 짝수번 째 요소를 선택 odd 홀수, xn + 1 원하는 순번의 요소를 선택
+         span:nth-child(5n + 1) {
+        background-color: teal;
+      } */
+
+      /* p span {} p 부모 span 자식의 요소 변경 inside
+         div > span {} div 부모 > span direct 자식의 요소 변경 under
+         p + span {} p + span 형제의 요소 변경 next 
+         p ~ span {} 바로 뒤의 형제가 아닐 경우 요소 변경 
+         selector들 간의 우선순위가 존재 높은 순으로 적용되는 경우*/
+
+      /* input:required input에 required가 포함된 요소를 변경　*/
+      span {
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      input {
+        border: 1px solid wheat;
+      }
+      input:required {
+        border: 1px solid tomato;
+      }
+      /* attrinute selector input[type="password"] {}
+        ~는 독자적인 단어, 어구 "name"을 잡아주는 것이고
+        *는 어떤 문장이든 name를 포함하고 있으면 다 선택됨
+        ~="name" -> ex) first name, last name 등등
+        *="name" -> ex) rename, ringname, asdfajsnameadsfasdf 등등*/
+      input[placeholder~="name"] {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form>
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Last name" />
+        <input type="password" required placeholder="password" />
+      </form>
+    </div>
+  </body>
+</html>

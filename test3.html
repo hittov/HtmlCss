@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .big-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 700px;
+        height: 900px;
+        padding: 10px;
+      }
+      h1 {
+        font-size: 40px;
+      }
+      .child {
+        width: 220px;
+        height: 410px;
+        margin: 15px;
+        position: relative;
+      }
+      .child:first-child {
+        background-color: tomato;
+      }
+      .child:nth-child(2) {
+        background-color: teal;
+      }
+      .child:nth-child(3) {
+        background-color: burlywood;
+      }
+      .child:last-child {
+        background-color: thistle;
+      }
+
+      .child-text {
+        position: absolute;
+        top: 17px;
+        width: 220px;
+        height: 120px;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The Best Colors</h1>
+    <div class="big-box">
+      <div class="child">
+        <div class="child-text">
+          <h2>Tomato</h2>
+          <h3>#FF6347</h3>
+        </div>
+      </div>
+      <div class="child">
+        <div class="child-text">
+          <h2>Teal</h2>
+          <h3>#008080</h3>
+        </div>
+      </div>
+      <div class="child">
+        <div class="child-text">
+          <h2>Burlwood</h2>
+          <h3>#DEB887</h3>
+        </div>
+      </div>
+      <div class="child">
+        <div class="child-text">
+          <h2>Thistle</h2>
+          <h3>#D7BFD7</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
