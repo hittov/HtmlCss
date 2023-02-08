@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>The Taeyong Times</title>
+    <style>
+      /* media query는 오직 CSS만을 이용해서 스크린의 사이즈를 알 수 있는 방법 
+         스크린 사이즈에 따라 css를 변경한다*/
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+      div {
+        background-color: teal;
+        width: 200px;
+        height: 200px;
+      }
+      /* @media queriy css 조건문 참일 경우 css 적용 
+         screen 사이즈가 400px 보다 작으면 css 변경 @media scrren and (max-width: 400px) {} 
+         screen 사이즈가 650px 750px 사이에 있으면 css 변경 / 더 많은 조건을 가질 수 있다 
+         orientation: landscape/portarait 가로 인지 세로 인지 구분 가능 
+         min/max-device-wdth = 휴대폰 적용, 브라우저 미적용 
+         aspect-ratio옵션으로는 스크린이 레티나 디스플레인지 아닌지도 구분
+         screen 외에 print를 사용 print 이용 시 css를 변경 해줌 */
+      @media screen and (max-width: 600px) {
+        div {
+          background-color: tomato;
+        }
+      }
+      @media screen and (min-width: 601px) and (max-width: 1200px) {
+        div {
+          background-color: wheat;
+        }
+      }
+      span {
+        font-size: 35px;
+      }
+      @media screen and (orientation: landscape) {
+        span {
+          display: none;
+        }
+      }
+      @media print {
+        body {
+          background-color: tomato;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <span>please flip your phone :(</span>
+  </body>
+</html>

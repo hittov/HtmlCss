@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>The Taeyong Times</title>
+    <style>
+      /* transform 한 요소를 변형시킴.*/
+      /* border-radius: 50% 는 원이됨 */
+      /* rotateX,Y,Z(숫자deg) 축을 중심으로 회전시킴 css로 3D작업을 할 수 있다 
+         scaleX.Y 축으로 크기를 조절 translateX.Y,Z 원하는 축으로 옮기기 
+         translate는 변형시키긴 하나 다른 형제(sibling)을 변화시키진 않는다 
+         box element를 변형시키지 않고 margin padding 적용 안됨 일종의 3D transformation이기 때문 
+         transformation은 페이지 픽셀의 다른 부분에서 일어난다 box 차원 x 
+         skewX,Y,Z 축을 중심으로 비스듬히 기울이기 * transition은 root 안에 */
+      img {
+        border: 10px solid black;
+        border-radius: 50%;
+        transition: transform 5s ease-in-out;
+      }
+      img:hover {
+        transform: rotateY(360deg) scale(0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <img src="img/1.png" />
+    <span>addasdfsdf</span>
+  </body>
+</html>

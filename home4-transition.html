@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>The Taeyong Times</title>
+    <style>
+      /* transition 어떤 상태에서 다른 상태로의 변화를 애니메이션으로 만드는 방법 
+         transition은 state에 따라 바뀌는 property를 갖고 있으면 사용됨
+         transition은 state(hover, focus 등)가 아닌 원래 속성에 넣어야한다.
+         transition을 주려면 원래 속성과 state에 동일한 옵션이 있어야함 
+         ease-in function 브라우저에게 변화하는 방법을 알려주는 함수
+         linear（직선), ease시리즈 브라우저에게 애니메이션이 어떻게 변화하는지 설정
+         in 시작 끝 빠름 out 시작 끝 느림 in out 시작 빠름 끝 느림
+         기본적으로 all을 사용 특정 요소에 주려면 color와 같이 입력 
+         cubic-bezier 원하는 transition 애니메이션을 직접 적용 시킬 수 있다 */
+      a {
+        color: wheat;
+        background-color: tomato;
+        text-decoration: none;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 20px;
+        transition: all 5s ease-in-out;
+      }
+      a:hover {
+        color: tomato;
+        background-color: wheat;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">Go home</a>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>The Taeyong Times</title>
+    <style>
+      /* 애니메이션을 만드는 기본적인 방법 @keyframes 함수이름 {from {} to{}} 
+      root에 animation: 함수이름 5s ease infinite 무한 반복 
+      단계를 세부적으로 나눌 수 있음 ex) 0% 25% 75% 100%
+      꼭 transfrom을 써야하는 건 아니지만 쓰느걸 권함 일부 property는 잘 안되기 때문*/
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      @keyframes coinFlip {
+        0% {
+          transform: rotateY(0);
+        }
+        25% {
+          transform: scale(2);
+        }
+        50% {
+          border-radius: 0px;
+          transform: rotateY(180deg) translateX(-100px);
+          border-color: tomato;
+        }
+        75% {
+          transform: scale(5);
+          border-radius: 20px;
+        }
+        100% {
+          transform: rotateY(0) translateY(0px);
+        }
+      }
+      img {
+        border: 10px solid black;
+        border-radius: 50%;
+        width: 200px;
+        animation: coinFlip 5s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="img/1.png" />
+  </body>
+</html>
