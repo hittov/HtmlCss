@@ -1,0 +1,25 @@
+.music-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.music-area__box {
+    width: 70px;
+    height: 70px;
+    background-color: gold;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 0 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-area__title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 23px;
+}
+.music-area__by {
+   font-size: 1px;
+}

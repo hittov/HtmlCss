@@ -1,0 +1,22 @@
+.play-area {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px 0px;
+
+}
+.play-area__btn {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    border-width: 1px 1px 3px 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play-area__btn:first-child {
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 7px;
+    border-width: 1px 1px 3px 1px;
+}

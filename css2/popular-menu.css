@@ -1,0 +1,15 @@
+.popular-menu h1 {
+    padding: 0px 15px;
+}
+
+.popular-menu__list {
+    display: flex;
+    overflow-x: auto;
+    margin-bottom: 15px;
+}
+
+.popular-menu__img {
+    width: 130px;
+    height: 90px;
+    margin: 10px 0px;
+}

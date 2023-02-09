@@ -1,0 +1,82 @@
+@import "reset.css";
+@import "status-bar.css";
+@import "music-area.css";
+@import "play-area.css";
+
+* {
+    box-sizing: border-box;
+  }
+body {
+    display: flex;
+    justify-content: center;  
+}
+
+.big-box {
+    width: 220px;
+    height: 100vh;
+    border: 4px solid aqua;
+    display: flex;
+    flex-direction: column;
+  
+    padding: 0px 3px;
+}
+
+.list-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0px 10px;
+} 
+
+.list-area__box:first-child {
+    width: 35px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: tomato;
+    
+}
+.list-area__box:nth-child(2) {
+    width: 35px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: pink;
+}
+.list-area__box:nth-child(3) {
+    width: 35px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: blue;
+}
+.list-area__box:last-child {
+    width: 35px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: turquoise;
+}
+
+
+.list-area__title  {
+    margin-left: 40px;
+    font-size: 3px;
+    font-weight: bold;
+    line-height: 15px;
+    
+}
+.list-area__musition {
+    margin-left: 40px;
+    font-size: 1px;
+}
+
+
+
+
+
+
+
+
+
